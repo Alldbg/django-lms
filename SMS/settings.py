@@ -213,3 +213,10 @@ REST_FRAMEWORK = {
 # Strip payment config
 STRIPE_SECRET_KEY = env('STRIPE_SECRET_KEY')
 STRIPE_PUBLISHABLE_KEY = env('STRIPE_PUBLISHABLE_KEY')
+
+
+# https://www.wplogout.com/export-database-diagrams-erd-from-django/
+GRAPH_MODELS ={
+'all_applications': True,
+'graph_models': True,
+}
