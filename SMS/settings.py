@@ -29,7 +29,11 @@ SECRET_KEY = 'o!ld8nrt4vc*h1zoey*wj48x*q0#ss12h=+zh)kk^6b3aygg=!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["8000-adilmohak-djangolms-c3j6etpobto.ws-eu99.gitpod.io"]
+
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io','https://*.127.0.0.1']
+
+
 
 # change the default user models to our custom model
 AUTH_USER_MODEL = 'accounts.User' 
