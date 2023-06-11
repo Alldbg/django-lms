@@ -1,0 +1,209 @@
+gitpod /workspace/django-lms (main) $  python manage.py show_urls 
+/       app.views.home_view     home    login_required
+/accounts/admin_panel/  accounts.views.admin_panel      admin_panel
+/accounts/ajax/validate-username/       accounts.views.validate_username        validate_username
+/accounts/api/  accounts.api.views.UserListAPIView      accounts-api:users-api
+/accounts/change_password/      accounts.views.change_password  change_password
+/accounts/lecturer/add/ accounts.views.staff_add_view   add_lecturer
+/accounts/lecturers/    accounts.views.LecturerListView lecturer_list
+/accounts/lecturers/<int:pk>/delete/    accounts.views.delete_staff     lecturer_delete
+		/accounts/login/        django.contrib.auth.views.LoginView     login
+/accounts/logout/       django.contrib.auth.views.LogoutView    logout
+/accounts/parents/add/  accounts.views.ParentAdd        add_parent
+/accounts/password_change/      django.contrib.auth.views.PasswordChangeView    password_change
+/accounts/password_change/done/ django.contrib.auth.views.PasswordChangeDoneView        password_change_done
+/accounts/password_reset/       django.contrib.auth.views.PasswordResetView     password_reset
+/accounts/password_reset/done/  django.contrib.auth.views.PasswordResetDoneView password_reset_done
+/accounts/profile/      accounts.views.profile  profile
+/accounts/profile/<int:id>/detail/      accounts.views.profile_single   profile_single
+/accounts/register/     accounts.views.register register
+/accounts/reset/<uidb64>/<token>/       django.contrib.auth.views.PasswordResetConfirmView      password_reset_confirm
+/accounts/reset/done/   django.contrib.auth.views.PasswordResetCompleteView     password_reset_complete
+/accounts/setting/      accounts.views.profile_update   edit_profile
+/accounts/staff/<int:pk>/edit/  accounts.views.edit_staff       staff_edit
+/accounts/student/<int:pk>/edit/        accounts.views.edit_student     student_edit
+/accounts/student/add/  accounts.views.student_add_view add_student
+/accounts/students/     accounts.views.StudentListView  student_list
+/accounts/students/<int:pk>/delete/     accounts.views.delete_student   student_delete
+/add_item/      app.views.post_add      add_item
+/admin/ django.contrib.admin.sites.index        admin:index
+/admin/<app_label>/     django.contrib.admin.sites.app_index    admin:app_list
+/admin/<url>    django.contrib.admin.sites.catch_all_view
+/admin/accounts/parent/ django.contrib.admin.options.changelist_view    admin:accounts_parent_changelist
+/admin/accounts/parent/<path:object_id>/        django.views.generic.base.RedirectView
+/admin/accounts/parent/<path:object_id>/change/ django.contrib.admin.options.change_view        admin:accounts_parent_change
+/admin/accounts/parent/<path:object_id>/delete/ django.contrib.admin.options.delete_view        admin:accounts_parent_delete
+/admin/accounts/parent/<path:object_id>/history/        django.contrib.admin.options.history_view       admin:accounts_parent_history
+/admin/accounts/parent/add/     django.contrib.admin.options.add_view   admin:accounts_parent_add
+/admin/accounts/student/        django.contrib.admin.options.changelist_view    admin:accounts_student_changelist
+/admin/accounts/student/<path:object_id>/       django.views.generic.base.RedirectView
+/admin/accounts/student/<path:object_id>/change/        django.contrib.admin.options.change_view        admin:accounts_student_change
+/admin/accounts/student/<path:object_id>/delete/        django.contrib.admin.options.delete_view        admin:accounts_student_delete
+/admin/accounts/student/<path:object_id>/history/       django.contrib.admin.options.history_view       admin:accounts_student_history
+/admin/accounts/student/add/    django.contrib.admin.options.add_view   admin:accounts_student_add
+/admin/accounts/user/   django.contrib.admin.options.changelist_view    admin:accounts_user_changelist
+/admin/accounts/user/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/accounts/user/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:accounts_user_change
+/admin/accounts/user/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:accounts_user_delete
+/admin/accounts/user/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:accounts_user_history
+/admin/accounts/user/add/       django.contrib.admin.options.add_view   admin:accounts_user_add
+/admin/app/newsandevents/       django.contrib.admin.options.changelist_view    admin:app_newsandevents_changelist
+/admin/app/newsandevents/<path:object_id>/      django.views.generic.base.RedirectView
+/admin/app/newsandevents/<path:object_id>/change/       django.contrib.admin.options.change_view        admin:app_newsandevents_change
+/admin/app/newsandevents/<path:object_id>/delete/       django.contrib.admin.options.delete_view        admin:app_newsandevents_delete
+/admin/app/newsandevents/<path:object_id>/history/      django.contrib.admin.options.history_view       admin:app_newsandevents_history
+/admin/app/newsandevents/add/   django.contrib.admin.options.add_view   admin:app_newsandevents_add
+/admin/app/semester/    django.contrib.admin.options.changelist_view    admin:app_semester_changelist
+/admin/app/semester/<path:object_id>/   django.views.generic.base.RedirectView
+/admin/app/semester/<path:object_id>/change/    django.contrib.admin.options.change_view        admin:app_semester_change
+/admin/app/semester/<path:object_id>/delete/    django.contrib.admin.options.delete_view        admin:app_semester_delete
+/admin/app/semester/<path:object_id>/history/   django.contrib.admin.options.history_view       admin:app_semester_history
+/admin/app/semester/add/        django.contrib.admin.options.add_view   admin:app_semester_add
+/admin/app/session/     django.contrib.admin.options.changelist_view    admin:app_session_changelist
+/admin/app/session/<path:object_id>/    django.views.generic.base.RedirectView
+/admin/app/session/<path:object_id>/change/     django.contrib.admin.options.change_view        admin:app_session_change
+/admin/app/session/<path:object_id>/delete/     django.contrib.admin.options.delete_view        admin:app_session_delete
+/admin/app/session/<path:object_id>/history/    django.contrib.admin.options.history_view       admin:app_session_history
+/admin/app/session/add/ django.contrib.admin.options.add_view   admin:app_session_add
+/admin/auth/group/      django.contrib.admin.options.changelist_view    admin:auth_group_changelist
+/admin/auth/group/<path:object_id>/     django.views.generic.base.RedirectView
+/admin/auth/group/<path:object_id>/change/      django.contrib.admin.options.change_view        admin:auth_group_change
+/admin/auth/group/<path:object_id>/delete/      django.contrib.admin.options.delete_view        admin:auth_group_delete
+/admin/auth/group/<path:object_id>/history/     django.contrib.admin.options.history_view       admin:auth_group_history
+/admin/auth/group/add/  django.contrib.admin.options.add_view   admin:auth_group_add
+/admin/autocomplete/    django.contrib.admin.sites.autocomplete_view    admin:autocomplete
+/admin/course/course/   django.contrib.admin.options.changelist_view    admin:course_course_changelist
+/admin/course/course/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/course/course/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:course_course_change
+/admin/course/course/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:course_course_delete
+/admin/course/course/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:course_course_history
+/admin/course/course/add/       django.contrib.admin.options.add_view   admin:course_course_add
+/admin/course/courseallocation/ django.contrib.admin.options.changelist_view    admin:course_courseallocation_changelist
+/admin/course/courseallocation/<path:object_id>/        django.views.generic.base.RedirectView
+/admin/course/courseallocation/<path:object_id>/change/ django.contrib.admin.options.change_view        admin:course_courseallocation_change
+/admin/course/courseallocation/<path:object_id>/delete/ django.contrib.admin.options.delete_view        admin:course_courseallocation_delete
+/admin/course/courseallocation/<path:object_id>/history/        django.contrib.admin.options.history_view       admin:course_courseallocation_history
+/admin/course/courseallocation/add/     django.contrib.admin.options.add_view   admin:course_courseallocation_add
+/admin/course/program/  django.contrib.admin.options.changelist_view    admin:course_program_changelist
+/admin/course/program/<path:object_id>/ django.views.generic.base.RedirectView
+/admin/course/program/<path:object_id>/change/  django.contrib.admin.options.change_view        admin:course_program_change
+/admin/course/program/<path:object_id>/delete/  django.contrib.admin.options.delete_view        admin:course_program_delete
+/admin/course/program/<path:object_id>/history/ django.contrib.admin.options.history_view       admin:course_program_history
+/admin/course/program/add/      django.contrib.admin.options.add_view   admin:course_program_add
+/admin/course/upload/   django.contrib.admin.options.changelist_view    admin:course_upload_changelist
+/admin/course/upload/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/course/upload/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:course_upload_change
+/admin/course/upload/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:course_upload_delete
+/admin/course/upload/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:course_upload_history
+/admin/course/upload/add/       django.contrib.admin.options.add_view   admin:course_upload_add
+/admin/jsi18n/  django.contrib.admin.sites.i18n_javascript      admin:jsi18n
+/admin/login/   django.contrib.admin.sites.login        admin:login
+/admin/logout/  django.contrib.admin.sites.logout       admin:logout
+/admin/password_change/ django.contrib.admin.sites.password_change      admin:password_change
+/admin/password_change/done/    django.contrib.admin.sites.password_change_done admin:password_change_done
+/admin/quiz/essay_question/     django.contrib.admin.options.changelist_view    admin:quiz_essay_question_changelist
+/admin/quiz/essay_question/<path:object_id>/    django.views.generic.base.RedirectView
+/admin/quiz/essay_question/<path:object_id>/change/     django.contrib.admin.options.change_view        admin:quiz_essay_question_change
+/admin/quiz/essay_question/<path:object_id>/delete/     django.contrib.admin.options.delete_view        admin:quiz_essay_question_delete
+/admin/quiz/essay_question/<path:object_id>/history/    django.contrib.admin.options.history_view       admin:quiz_essay_question_history
+/admin/quiz/essay_question/add/ django.contrib.admin.options.add_view   admin:quiz_essay_question_add
+/admin/quiz/mcquestion/ django.contrib.admin.options.changelist_view    admin:quiz_mcquestion_changelist
+/admin/quiz/mcquestion/<path:object_id>/        django.views.generic.base.RedirectView
+/admin/quiz/mcquestion/<path:object_id>/change/ django.contrib.admin.options.change_view        admin:quiz_mcquestion_change
+/admin/quiz/mcquestion/<path:object_id>/delete/ django.contrib.admin.options.delete_view        admin:quiz_mcquestion_delete
+/admin/quiz/mcquestion/<path:object_id>/history/        django.contrib.admin.options.history_view       admin:quiz_mcquestion_history
+/admin/quiz/mcquestion/add/     django.contrib.admin.options.add_view   admin:quiz_mcquestion_add
+/admin/quiz/progress/   django.contrib.admin.options.changelist_view    admin:quiz_progress_changelist
+/admin/quiz/progress/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/quiz/progress/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:quiz_progress_change
+/admin/quiz/progress/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:quiz_progress_delete
+/admin/quiz/progress/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:quiz_progress_history
+/admin/quiz/progress/add/       django.contrib.admin.options.add_view   admin:quiz_progress_add
+/admin/quiz/quiz/       django.contrib.admin.options.changelist_view    admin:quiz_quiz_changelist
+/admin/quiz/quiz/<path:object_id>/      django.views.generic.base.RedirectView
+/admin/quiz/quiz/<path:object_id>/change/       django.contrib.admin.options.change_view        admin:quiz_quiz_change
+/admin/quiz/quiz/<path:object_id>/delete/       django.contrib.admin.options.delete_view        admin:quiz_quiz_delete
+/admin/quiz/quiz/<path:object_id>/history/      django.contrib.admin.options.history_view       admin:quiz_quiz_history
+/admin/quiz/quiz/add/   django.contrib.admin.options.add_view   admin:quiz_quiz_add
+/admin/quiz/sitting/    django.contrib.admin.options.changelist_view    admin:quiz_sitting_changelist
+/admin/quiz/sitting/<path:object_id>/   django.views.generic.base.RedirectView
+/admin/quiz/sitting/<path:object_id>/change/    django.contrib.admin.options.change_view        admin:quiz_sitting_change
+/admin/quiz/sitting/<path:object_id>/delete/    django.contrib.admin.options.delete_view        admin:quiz_sitting_delete
+/admin/quiz/sitting/<path:object_id>/history/   django.contrib.admin.options.history_view       admin:quiz_sitting_history
+/admin/quiz/sitting/add/        django.contrib.admin.options.add_view   admin:quiz_sitting_add
+/admin/r/<int:content_type_id>/<path:object_id>/        django.contrib.contenttypes.views.shortcut      admin:view_on_site
+/admin/result/result/   django.contrib.admin.options.changelist_view    admin:result_result_changelist
+/admin/result/result/<path:object_id>/  django.views.generic.base.RedirectView
+/admin/result/result/<path:object_id>/change/   django.contrib.admin.options.change_view        admin:result_result_change
+/admin/result/result/<path:object_id>/delete/   django.contrib.admin.options.delete_view        admin:result_result_delete
+/admin/result/result/<path:object_id>/history/  django.contrib.admin.options.history_view       admin:result_result_history
+/admin/result/result/add/       django.contrib.admin.options.add_view   admin:result_result_add
+/admin/result/takencourse/      django.contrib.admin.options.changelist_view    admin:result_takencourse_changelist
+/admin/result/takencourse/<path:object_id>/     django.views.generic.base.RedirectView
+/admin/result/takencourse/<path:object_id>/change/      django.contrib.admin.options.change_view        admin:result_takencourse_change
+/admin/result/takencourse/<path:object_id>/delete/      django.contrib.admin.options.delete_view        admin:result_takencourse_delete
+/admin/result/takencourse/<path:object_id>/history/     django.contrib.admin.options.history_view       admin:result_takencourse_history
+/admin/result/takencourse/add/  django.contrib.admin.options.add_view   admin:result_takencourse_add
+/dashboard/     app.views.dashboard_view        dashboard
+/item/<int:pk>/delete/  app.views.delete_post   delete_post
+/item/<int:pk>/edit/    app.views.edit_post     edit_post
+/media/<path>   django.views.static.serve
+/payments/      payments.views.PaymentGetwaysView       payment_gateways
+/payments/coinbase/     payments.views.payment_coinbase coinbase
+/payments/complete/     payments.views.paymentComplete  complete
+/payments/create-invoice/       payments.views.create_invoice   create_invoice
+/payments/gopay-charge/ payments.views.gopay_charge     gopay_charge
+/payments/invoice-detail/<int:id>/      payments.views.invoice_detail   invoice_detail
+/payments/paylike/      payments.views.payment_paylike  paylike
+/payments/payment-succeed/      payments.views.payment_succeed  payment-succeed
+/payments/paypal/       payments.views.payment_paypal   paypal
+/payments/stripe-charge/        payments.views.stripe_charge    stripe_charge
+/payments/stripe/       payments.views.payment_stripe   stripe
+/programs/      course.views.program_view       programs
+/programs/<int:pk>/course/add/  course.views.course_add course_add
+/programs/<int:pk>/delete/      course.views.program_delete     program_delete
+/programs/<int:pk>/detail/      course.views.program_detail     program_detail
+/programs/<int:pk>/edit/        course.views.program_edit       edit_program
+/programs/add/  course.views.program_add        add_program
+/programs/allocated_course/<int:pk>/edit/       course.views.edit_allocated_course      edit_allocated_course
+/programs/course/<int:pk>/deallocate/   course.views.deallocate_course  course_deallocate
+/programs/course/<slug>/detail/ course.views.course_single      course_detail
+/programs/course/<slug>/documentations/<int:file_id>/delete/    course.views.handle_file_delete upload_file_delete
+/programs/course/<slug>/documentations/<int:file_id>/edit/      course.views.handle_file_edit   upload_file_edit
+/programs/course/<slug>/documentations/upload/  course.views.handle_file_upload upload_file_view
+/programs/course/<slug>/edit/   course.views.course_edit        edit_course
+/programs/course/<slug>/video_tutorials/<video_slug>/delete/    course.views.handle_video_delete        upload_video_delete
+/programs/course/<slug>/video_tutorials/<video_slug>/detail/    course.views.handle_video_single        video_single
+/programs/course/<slug>/video_tutorials/<video_slug>/edit/      course.views.handle_video_edit  upload_video_edit
+/programs/course/<slug>/video_tutorials/upload/ course.views.handle_video_upload        upload_video
+/programs/course/allocated/     course.views.course_allocation_view     course_allocation_view
+/programs/course/assign/        course.views.CourseAllocationFormView   course_allocation
+/programs/course/delete/<slug>/ course.views.course_delete      delete_course
+/programs/course/drop/  course.views.course_drop        course_drop
+/programs/course/registration/  course.views.course_registration        course_registration
+/programs/my_courses/   course.views.user_course_list   user_course_list
+/quiz/<int:pk>/<slug>/take/     quiz.views.QuizTake     quiz_take
+/quiz/<slug>/<int:pk>/add/      quiz.views.QuizUpdateView       quiz_update
+/quiz/<slug>/<int:pk>/delete/   quiz.views.quiz_delete  quiz_delete
+/quiz/<slug>/quiz_add/  quiz.views.QuizCreateView       quiz_create
+/quiz/<slug>/quizzes/   quiz.views.quiz_list    quiz_index
+/quiz/marking/<int:pk>/ quiz.views.QuizMarkingDetail    quiz_marking_detail
+/quiz/marking_list/     quiz.views.QuizMarkingList      quiz_marking
+/quiz/mc-question/add/<slug>/<int:quiz_id>/     quiz.views.MCQuestionCreate     mc_create
+/quiz/progress/ quiz.views.QuizUserProgressView quiz_progress
+/result/assessment/     result.views.assessment_result  ass_results
+/result/grade/  result.views.grade_result       grade_results
+/result/manage-score/   result.views.add_score  add_score
+/result/manage-score/<int:id>/  result.views.add_score_for      add_score_for
+/result/registration/form/      result.views.course_registration_form   course_registration_form
+/result/result/print/<int:id>/  result.views.result_sheet_pdf_view      result_sheet_pdf_view
+/search/        search.views.SearchView query
+/semester/      app.views.semester_list_view    semester_list
+/semester/<int:pk>/delete/      app.views.semester_delete_view  delete_semester
+/semester/<int:pk>/edit/        app.views.semester_update_view  edit_semester
+/semester/add/  app.views.semester_add_view     add_semester
+/session/       app.views.session_list_view     session_list
+/session/<int:pk>/delete/       app.views.session_delete_view   delete_session
+/session/<int:pk>/edit/ app.views.session_update_view   edit_session
+/session/add/   app.views.session_add_view      add_session
+/static/<path>  django.views.static.serve
