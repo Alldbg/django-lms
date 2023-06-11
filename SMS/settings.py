@@ -55,6 +55,8 @@ THIRED_PARTY_APPS = [
     'crispy_forms',
     'rest_framework',
     'channels',
+    'django_extensions',
+
 ]
 
 # Custom apps
